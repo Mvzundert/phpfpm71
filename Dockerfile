@@ -28,7 +28,8 @@ RUN apt-get update && \
         libpng12-dev \
         libfreetype6-dev \
         libssl-dev \
-        libmcrypt-dev
+        libmcrypt-dev \
+        zlib1g-dev
 
 # Install the PHP mcrypt extention
 RUN docker-php-ext-install mcrypt
